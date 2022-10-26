@@ -8,14 +8,11 @@ window.onload = function(e) {
     a[0].style.color="blue";
     a[1].style.color="blue";
 
-    let lis = document.getElementsByTagName('li')
-    let items = lis.getElementsByClassName("item");
-    console.log(items);
+    console.log(document.querySelectorAll('li.item'));
 
-    let buttons = document.getElementsByTagName('button').getElementsByClassName("buttons");
-    console.log(buttons);
+    console.log(document.querySelectorAll('.buttons > button'));
 
-    document.getElementById("color").style.backgroundColor = "#0000FF";
+    document.getElementsByTagName('p')[0].style.backgroundColor = '#FF0000';
 
-    
+    document.querySelectorAll('.buttons > button').forEach( e => e.style.color = 'green');
 }
