@@ -11,8 +11,15 @@ class Rectangle {
     }
 
     // area
-
+    area(){
+        return this.x*this.y;
+    }
     // overlay
+
+    overlay(){
+        
+    }
+
     // tenemos que comprobar la siguiente situación
     // .x----------x.....
     // .|..........|.....
@@ -29,7 +36,7 @@ let r2 = new Rectangle(3,4);
 r1.print()
 r2.print()
 
-// let area = r1.area();
-// console.log(`area ${area}`)
+let area = r1.area();
+console.log(`area ${area}`)
 
 // let isOverlay = r1.overlay(r2)
