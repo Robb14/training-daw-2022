@@ -12,6 +12,8 @@
 
     <div id="app">
       {{ message }}
+      <div>Valor: {{ counter }}</div>
+      <button v-on:click="counter++">Incrementar</button>
     </div>
   </main>
 
@@ -19,7 +21,8 @@
     let app = new Vue({
       el: '#app',
       data: {
-        message: 'Hello Vue!!'
+        message: 'Hello Vue!!',
+        counter: 0
       }
     })
   </script>
